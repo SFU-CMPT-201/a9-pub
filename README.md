@@ -4,6 +4,10 @@ In this assignment you will implement a memory allocator that uses the memory ma
 discussed in class. `main.c` contains a main function that tests your allocator. `alloc.h` contains
 the definitions used for implementation and testing.
 
+Debugging in this assignment could be challenging to some of you. We highly recommend you to use
+`cgdb` to debug your program as you can readily inspect how you use the heap. Logging will likely
+not suffice.
+
 Before you start the assignment, make sure you `record`.
 
 ## Allocator Design Overview
@@ -91,6 +95,8 @@ Here are the requirements for your implementation.
   smallest remainder fragment. `WORST_FIT` satisfies the allocation request from the available
   memory block that is at least as large as the requested size and that results in the largest
   remainder fragment.
+* Note that these algorithms only differ in how they find a free block. This means that you can
+  share much of the code across these three algorithms.
 
 ## `dealloc()`
 
