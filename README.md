@@ -76,7 +76,7 @@ Here are the requirements for your implementation.
   discussed in class). The only exception is when, if you performed a split, the remaining size
   would be equal to or less than the header size. If that is the case, you should *not* perform a
   split and just return the entire free block to your user program.
-* A user program can use [`allocopt`](#allocopt) to choose an allocation algorithm. `alloc.h`
+* A user program can use [`allocopt()`](#allocopt) to choose an allocation algorithm. `alloc.h`
   defines the following options.
 
   ```c
@@ -112,7 +112,7 @@ Here are the requirements for your implementation.
 
 ![](memory1.png)
 
-_Figure 1: Each block is labeled with its size. White indicates free block while allocated blocks
+_Figure 1: Each block is labeled with its size. White indicates free blocks while allocated blocks
 are colored._
 
 ![](memory2.png)
