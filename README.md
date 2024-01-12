@@ -1,4 +1,4 @@
-# Assignment 10: Memory Management
+# Assignment 9: Memory Management
 
 In this assignment you will implement a memory allocator that uses the memory management techniques
 discussed in class. `main.c` contains a main function that tests your allocator. `alloc.h` contains
