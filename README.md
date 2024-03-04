@@ -151,7 +151,7 @@ should be merged immediately (as shown in Figure 1)._
 
 ## Code Structure and CMake
 
-* You need to use the same code structure as A9.
+* You need to use the same code structure as A8.
 * You also need to write `CMakeLists.txt` that produces a single executable named `main` that runs
   the test cases in `main.c`.
 * You need to set the `CC` and `CXX` environment variables to `clang` and `clang++`. If you haven't,
@@ -162,7 +162,7 @@ should be merged immediately (as shown in Figure 1)._
   export CXX=$(which clang++)
   ```
 
-* Similar to A9, you should not hard-code or customize your implementation tailored to our test
+* Similar to A8, you should not hard-code or customize your implementation tailored to our test
   cases. Generally, you should consider the provided test cases as examples or specific instances of
   general cases.
 
@@ -170,7 +170,10 @@ should be merged immediately (as shown in Figure 1)._
 
 * `main.c` contains a main function that tests your allocator. The max score is 390. If you compile
   it and run it, it will give you a score and also tell you which test cases have failed.
-* Code that does not compile gets a 0.
+* Code that does not compile with CMake gets a 0.
+* Memory issues have a penalty of -10%. You should use appropriate sanitizers to check for memory
+  issues.
+* A wrong code directory structure has a penalty of -10 pts.
 
 ## Acknowledgment
 
