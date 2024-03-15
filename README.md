@@ -4,9 +4,10 @@ In this assignment you will implement a memory allocator that uses the memory ma
 discussed in class. `main.c` contains a main function that tests your allocator. `alloc.h` contains
 the definitions used for implementation and testing.
 
-Debugging in this assignment could be challenging to some of you. We highly recommend you to use
-`cgdb` to debug your program as you can readily inspect how you use the heap. Logging will likely
-not suffice.
+Debugging in this assignment is going to be challenging. We highly recommend you to use `cgdb` to
+debug your program as you can readily inspect how you use the heap. Logging will not suffice. If you
+need to, go back to [A5](https://github.com/SFU-CMPT-201/a5) and review the `gdb` tutorial once
+again. You won't regret using `cgdb` for this assignment.
 
 Before you start the assignment, make sure you `record`.
 
@@ -172,7 +173,8 @@ should be merged immediately (as shown in Figure 1)._
   it and run it, it will give you a score and also tell you which test cases have failed.
 * Code that does not compile with CMake gets a 0.
 * Memory issues have a penalty of -10%. You should use appropriate sanitizers to check for memory
-  issues.
+  issues. Make sure you also use the debug option enabled in `CMakeLists.txt` to compile your code
+  with debug information. You should remove the debug option when you submit your code.
 * A wrong code directory structure has a penalty of -10 pts.
 
 ## Acknowledgment
