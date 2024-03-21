@@ -172,9 +172,11 @@ should be merged immediately (as shown in Figure 1)._
 * `main.c` contains a main function that tests your allocator. The max score is 390. If you compile
   it and run it, it will give you a score and also tell you which test cases have failed.
 * Code that does not compile with CMake gets a 0.
+* Code that does not generate all the required executables gets a 0.
 * Memory issues have a penalty of -10%. You should use appropriate sanitizers to check for memory
   issues. Make sure you also use the debug option enabled in `CMakeLists.txt` to compile your code
-  with debug information. You should remove the debug option when you submit your code.
+  with debug information. However, your code needs to work without the debug option as well. You
+  should remove the debug option when you submit your code.
 * A wrong code directory structure has a penalty of -10 pts.
 
 ## Acknowledgment
