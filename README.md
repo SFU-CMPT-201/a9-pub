@@ -175,8 +175,8 @@ should be merged immediately (as shown in Figure 1)._
 * Code that does not generate all the required executables gets a 0.
 * Memory issues have a penalty of -10%. You should use appropriate sanitizers to check for memory
   issues. Make sure you also use the debug option enabled in `CMakeLists.txt` to compile your code
-  with debug information. However, your code needs to work without the debug option as well. You
-  should remove the debug option when you submit your code.
+  with debug information for testing. However, your code needs to work without the debug option as
+  well. You should remove the debug option when you submit your code.
 * A wrong code directory structure has a penalty of -10 pts.
 
 ## Acknowledgment
